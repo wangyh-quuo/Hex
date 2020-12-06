@@ -1,15 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <div>
+    <HexButton title="1231"></HexButton>
+  </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import HelloWorld from "./components/HelloWorld.vue";
+import HexButton from "./components/button/index";
 
 @Options({
   components: {
-    HelloWorld
+    HexButton
   }
 })
 export default class App extends Vue {}
